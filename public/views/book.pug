@@ -1,0 +1,25 @@
+html
+    link(rel="stylesheet",href="../style.css")
+    head
+        title pug document
+    body
+        h1 book details 
+        div.table
+            table
+                thead
+                    th book_id
+                    th name 
+                    th Category 
+                    th price
+                 
+                    
+                tbody
+                    each x in books
+                        tr
+                            td= x.book_id
+                            td= x.name
+                            td= x.Category
+                            td= x.price
+                            
+
+            
